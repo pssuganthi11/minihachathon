@@ -1,0 +1,48 @@
+<!-- Display your Name on Webpage , display all of 
+    vowels your name has when “calculateVowels” Button is clicked  and also add a 
+    button which when clicked will take me to github your github repo. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./Q1.css"/>
+    <title>Q1</title>
+</head>
+<script>
+//     function countVowel(str) { 
+
+// // find the count of vowels
+// const count = str.match(/[aeiou]/gi).length;
+
+// // return number of vowels
+// return count;
+// }
+
+// // take input
+// const string = prompt('Enter a string: ');
+
+// const result = countVowel(string);
+
+// console.log(result);
+let s="squid game",i,v,ch,count=0
+v="A,E,I,O,U,a,e,i,o,u"
+for(i=0;i<s.length;i++)
+{
+  
+ch=s[i]
+
+if(v.indexOf(ch)!=-1)
+{
+  count++
+}
+}
+console.log("the vowels count is",count)
+
+</script>
+<body>
+    <h1></h1>
+    <button onclick="{script}"> calculate volume</button>
+    <button>add a repo</button>
+</body>
+</html>

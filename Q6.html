@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="text/stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini</title>
+</head>
+<body>
+    <div>
+        <script>
+            let n = 3; 
+            let string = "";
+            for (let i = 0; i < n; i++) {
+              for (let j = 0; j < i; j++) {
+                string += " ";
+              }
+              
+              for (let k = 0; k < (n - i) * 2 - 1; k++) {
+                string += "*";
+              }
+              string += "\n";
+            }
+
+            for (let i = 2; i <= n; i++) {
+              for (let j = n; j > i; j--) {
+                string += " ";
+              }
+              for (let k = 0; k < i * 2 - 1; k++) {
+                string += "*";
+              }
+              string += "\n";
+            }
+            document.write(`<pre>${string}</pre>`);
+          </script>
+    </div>
+</body>
+</html>
